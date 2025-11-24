@@ -1,8 +1,122 @@
-/*
+/**
+ * Forest Mini 플러그인 스타일
+ */
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+/* LensView 컨테이너 */
+.forest-mini-lens-view {
+	padding: 1rem;
+	height: 100%;
+	overflow-y: auto;
+}
 
-If your plugin does not need CSS, delete this file.
+/* 헤더 */
+.forest-mini-header {
+	border-bottom: 2px solid var(--background-modifier-border);
+	padding-bottom: 0.5rem;
+	margin-bottom: 1rem;
+}
 
-*/
+.forest-mini-header h3 {
+	margin: 0;
+	color: var(--text-normal);
+	font-size: 1.2em;
+}
+
+/* 환영 메시지 */
+.forest-mini-welcome {
+	color: var(--text-muted);
+	font-style: italic;
+	padding: 1rem;
+	text-align: center;
+}
+
+/* 로딩 */
+.forest-mini-loading {
+	text-align: center;
+	padding: 2rem;
+	color: var(--text-muted);
+}
+
+.forest-mini-loading p {
+	font-size: 1.1em;
+}
+
+/* 타임스탬프 */
+.forest-mini-timestamp {
+	margin-bottom: 1rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.forest-mini-timestamp small {
+	color: var(--text-muted);
+}
+
+/* 분석 결과 */
+.forest-mini-result {
+	line-height: 1.6;
+	color: var(--text-normal);
+}
+
+.forest-mini-result p {
+	margin-bottom: 0.8rem;
+}
+
+.forest-mini-result h1,
+.forest-mini-result h2,
+.forest-mini-result h3 {
+	margin-top: 1.5rem;
+	margin-bottom: 0.8rem;
+	color: var(--text-normal);
+}
+
+.forest-mini-result ul,
+.forest-mini-result ol {
+	margin-left: 1.5rem;
+	margin-bottom: 0.8rem;
+}
+
+.forest-mini-result li {
+	margin-bottom: 0.4rem;
+}
+
+.forest-mini-result code {
+	background-color: var(--background-modifier-border);
+	padding: 0.2rem 0.4rem;
+	border-radius: 3px;
+	font-family: var(--font-monospace);
+}
+
+.forest-mini-result pre {
+	background-color: var(--background-modifier-border);
+	padding: 1rem;
+	border-radius: 5px;
+	overflow-x: auto;
+}
+
+.forest-mini-result blockquote {
+	border-left: 3px solid var(--interactive-accent);
+	padding-left: 1rem;
+	margin-left: 0;
+	color: var(--text-muted);
+}
+
+/* 에러 */
+.forest-mini-error {
+	background-color: var(--background-modifier-error);
+	border: 1px solid var(--text-error);
+	border-radius: 5px;
+	padding: 1rem;
+	margin: 1rem 0;
+}
+
+.forest-mini-error p:first-child {
+	font-weight: bold;
+	color: var(--text-error);
+	margin-bottom: 0.5rem;
+}
+
+.forest-mini-error p:last-child {
+	color: var(--text-normal);
+	margin-bottom: 0;
+}
